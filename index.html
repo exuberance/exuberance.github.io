@@ -15,38 +15,39 @@
             -o-background-size: cover;
             background-size: cover;">
       <!--Import jQuery before materialize.js-->
-      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script type="text/javascript" src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
       <script type="text/javascript" src="js/materialize.min.js"></script>
-		<div id="index-banner" class="z-depth-0 parallax-container">
 		<nav class="transparent z-depth-0">
 				<div class="nav-wrapper container">
-				  <a href="#" class="brand-logo"><!--<img id="logo-container" src="images/Odyssey_text.png" style="width: 125px; height: 70px; padding-top: 10px; padding-bottom: 20px;" class="brand-logo"></img> --> Exuberance</a>
-				  <a href="#" data-activates="mobile" class="button-collapse"><i class="material-icons white-text">menu</i></a>
-        <ul class="right hide-on-med-and-down">
-		<li><a style="color: #fafafa"  href="">View Trailer!</a></li>
-          <li><a style="color: #fafafa"  href="events/index.html">Events</a></li>
-          <li><a style="color: #fafafa"  href="info/index.html#cus">Contact Us</a></li>
-        </ul>
-				<ul class="side-nav" id="mobile">
-					<li style="color: #3949ab; margin-left: 10%;" class="collection-header"><h5><b>Odyssey 2016</b></h5></li>
-					<li><a style="color: #3949ab" href="https://youtu.be/Pl04Cu87r9Q">View Trailer!</a></li>
-					<li><a style="color: #3949ab" href="events/index.html">Events</a></li>
-					<li><a style="color: #3949ab" href="info/index.html">General Information</a></li>
-					<li><a style="color: #3949ab" href="info/index.html#cus">Contact Us</a></li>
-				  </ul>
-      </div>
+      <a href="#" class="brand-logo">EXUBERANCE</a>
+		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        <li><a href="sass.html">View Trailer</a></li>
+        <li><a href="badges.html">Events</a></li>
+        <li><a href="collapsible.html">Contact us</a></li>
+      </ul>
+		<ul class="side-nav" id="mobile-demo">
+        <li><a href="sass.html">View Trailer</a></li>
+        <li><a href="badges.html">Events</a></li>
+        <li><a href="collapsible.html">Contact Us</a></li>
+      </ul>
+    </div>
     </nav>
 			<div class="section no-pad-bot" style="margin-bottom: 5%;">
       <div class="container">
         <br><br>
         <div class="row center">
+			<!--
 			       <div id="mob" style="margin-bottom: 20px; margin-top: 10px;" >
-				<img class="hide-on-small-only"src="images/exuberance.png" style="width: 25%; height: 65%;"></img>
-				<img class="hide-on-med-and-up" src="images/exuberance.png" style="width: 70%; height: 70%;"></img>
+				<img class="hide-on-small-only"src="images/exuberance.png" style="width: 30%; height: 70%;"></img>
+				<img class="hide-on-med-and-up" src="images/exuberance.png" style="width: 70%; height: 70%;"></img> -->
+			<img class="responsive-img" width=50% src="images/exuberance.png">
+			</div>
 			</div>
 		</div>
-		</div>
-	 </div>
-</div>
+		<script>
+			    $(".button-collapse").sideNav();
+
+		</script>
     </body>
   </html>
