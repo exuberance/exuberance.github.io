@@ -4,9 +4,10 @@
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
       <!--Import materialize.css-->
       <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
-
+	
       <!--Let browser know website is optimized for mobile-->
       <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<script src="js/jquery.countdown.js"></script>
     </head>
 
     <body style="background: url('images/background.jpg') no-repeat center center fixed;
@@ -43,6 +44,15 @@
 				<img class="hide-on-med-and-up" src="images/exuberance.png" style="width: 70%; height: 70%;"></img> -->
 			<img class="responsive-img" width=50% src="images/exuberance.png">
 			<h3 class="black-text z-depth-0">EXUBERANCE</h3>
+			<div id="getting-started"></div>
+				<script type="text/javascript">
+						$("#getting-started")
+  		.countdown("2018/01/01", function(event) {
+								$(this).text(
+					event.strftime('%D days %H:%M:%S')
+								);
+  				});
+						</script>
 			</div>
 			</div>
 		</div>
