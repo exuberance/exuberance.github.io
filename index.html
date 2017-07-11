@@ -48,7 +48,6 @@
   font-size: 12px;
   color: rgba(255, 255, 255, 0.6);
 }
-h1 { margin:150px auto; text-align:center;}
 </style>
     </head>
 
@@ -86,27 +85,10 @@ h1 { margin:150px auto; text-align:center;}
 				<img class="hide-on-med-and-up" src="images/exuberance.png" style="width: 70%; height: 70%;"></img> -->
 			<img class="responsive-img" width=50% src="images/exuberance.png">
 			<h3 class="black-text z-depth-0">EXUBERANCE</h3>
-			<div class="countdown-timer-wrapper">
-      <div class="timer" id="countdown"></div>
-    </div>
+			<iframe src="https://www.powr.io/plugins/countdown-timer/view?unique_label=da5a272b_1499793369&external_type=iframe" width="100%" height="600" frameborder="0"></iframe>
 			</div>
-			</div>
+				</div>
 		</div>
-		<script>
-        $(document).ready(function () {
-
-            var myDate = new Date();
-			myDate.setDate(myDate.getDate() + 10);
-            $("#countdown").countdown(myDate, function (event) {
-                $(this).html(
-                    event.strftime(
-                        '<div class="timer-wrapper"><div class="time">%D</div><span class="text">days</span></div><div class="timer-wrapper"><div class="time">%H</div><span class="text">hrs</span></div><div class="timer-wrapper"><div class="time">%M</div><span class="text">mins</span></div><div class="timer-wrapper"><div class="time">%S</div><span class="text">sec</span></div>'
-                    )
-                );
-            });
-
-        });
-    </script>
 		<script>
 			    $(".button-collapse").sideNav();
 
